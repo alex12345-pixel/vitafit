@@ -10,3 +10,9 @@ return  api.get("/")
 export const createTask = (task) => {
     return api.post("/", task);
 }
+export const deleteTask = (id) => {
+    return api.delete(`/${id}/`);
+}
+export const updateTask = (id, task) => {
+    return api.put(`/${id}/`, task);
+}
